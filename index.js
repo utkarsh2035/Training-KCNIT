@@ -22,8 +22,27 @@ console.log(calculator(3, 5, "/"))
 let counter = ()=>{
     let count = 1;
     return ()=>{
-        return ++count;
+        count++;
+        return count;
     }
 }
 let valueIncrementer = counter();
 console.log(valueIncrementer());
+
+// Destructuring
+
+// Destructuring of array
+let arr = [1, 2, 3, 4, "Jhon"];
+let [a, b, c] = arr;
+console.log(`a = ${a}, b = ${b}, c = ${c}`);
+
+// Destructuring of object
+let obj = {
+  name: "John",
+  age: 30,
+  city: "New York",
+};
+console.table(obj);
+
+let { name, city } = obj;
+console.log(`name: ${name} , city name: ${city}`);
