@@ -11,7 +11,7 @@ let calculator = (val1, val2, opr)=>{
         break; 
         case '%': return val1%val2;
         break; 
-        default: return false;
+        default: return false
     }
 }
 console.log(calculator(3, 5, "?"))
